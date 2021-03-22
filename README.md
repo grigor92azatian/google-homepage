@@ -1,0 +1,1 @@
+First project assignment for The Odin Project. I will be recreating the Google Homepage. 
