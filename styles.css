@@ -1,55 +1,63 @@
 * {
     box-sizing: border-box;
-    margin: 5px 5px;
+    /*margin: 5px 5px;*/
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+.flex-container{
+    display: flex;
 }
 body{
     /*border: 2px solid orange;*/
     font-family: sans-serif;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
 }
-.upper-navbar, .lower-footer{
-    height: 10%;
-}
-.center-stuff{
-    height: 80%;
-}
+
 .upper-navbar {
     /*border: 2px solid green;*/
     padding: 10px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.navbar-left, .navbar-right{
-    width: 50%;
-}
-.navbar-right img{
-    width: 20px;
-}
-.navbar-link, .footer-link {
-    text-decoration: none;
-    color: rgb(85, 81, 81);
-    text-align: center;
-}
-
-.navbar-link:hover, .footer-link:hover{
-    text-decoration: underline;
+    height: 10%;
 }
 .center-stuff{
     /*border: 2px solid red;*/
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 80%;
 }
-.google-logo{
-    width: 250px;
+.lower-footer{
+    /*border: 2px solid blue;*/
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
 }
+
+.navbar-left{
+    width: 50%;
+}
+.navbar-right{
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.page-link {
+    text-decoration: none;
+    color: rgb(85, 81, 81);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-link:hover{
+    text-decoration: underline;
+}
+
 .search-bar{
     border-radius: 20px;
     width: 600px;
@@ -70,17 +78,20 @@ body{
 .search-button:hover{
     border: 1px solid grey;
 }
-.lower-footer{
-    /*border: 2px solid blue;*/
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .footer-left, .footer-right{
-    display: flex;
     justify-content: center;
 }
 button, footer{
     background-color: rgb(230, 230, 230);
+}
+
+.lower-footer a{
+    padding-top: 8px;
+}
+.footer-center a{
+    margin-bottom: 10px;
+}
+.navbar-right a{
+    padding-top: 17px;
 }
